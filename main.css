@@ -1,0 +1,47 @@
+/*
+	Put your custom CSS here
+/*
+#portfolio{
+	position: relative;
+}
+.primary, .secondary {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	transition-duration: 1s;
+}
+
+
+
+.primary {
+	-webkit-transition: 2s;
+	z-index: 2;
+}
+
+
+.secondary {
+	-webkit-transition: 2s;
+	-webkit-transform: rotateY(180deg);
+	z-index: 1;
+}
+
+.portfolio-item:hover {
+	-webkit-transform:rotateY(180deg);
+}*/
+
+
+.primary, .secondary {
+	position: absolute;
+	transition-duration: 1s;
+}
+
+.secondary{
+	-webkit-transform: rotateY(-180deg);
+}
+
+.portfolio-item:hover .secondary{
+	-webkit-transform: rotateY(0);
+}
+
+.portfolio-item:hover .primary {
+	-webkit-transform: rotateY(180deg);
+}
