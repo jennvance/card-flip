@@ -2,7 +2,7 @@
 	Put your custom CSS here
 */
 
-/*OUR ATTEMPT - UNSUCCESSFUL*/
+/*OUR ATTEMPT*/
 
 #portfolio{
 	position: relative;
@@ -27,12 +27,13 @@
 
 /*CORRECT ANSWER*/
 
-.primary, .secondary {
+.primary {
 	position: absolute;
-	transition-duration: 1s;
+	transition: -webkit-transform 1s;
 }
 
-.secondary{
+.secondary { 
+	transition: -webkit-transform 1s;
 	-webkit-transform: rotateY(-180deg);
 }
 
